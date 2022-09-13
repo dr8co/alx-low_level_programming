@@ -3,7 +3,7 @@
 /**
  * main - entry point
  *
- * Description: Prints _putchar, followed by a new line.
+ * Description: Prints _putchar
  *
  * Return: always 0
  */

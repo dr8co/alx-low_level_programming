@@ -2,6 +2,7 @@
 
 /**
  * _abs - outputs absolut value of integer input
+ * @n: integer to check
  *
  * Return: n
  */

@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * void print_alphabet(void) - entry point
+ * print_alphabet - entry point
  *
  * Description: Prints the alphabet with _putchar
+ *
+ * Return: void
  */
 
 
