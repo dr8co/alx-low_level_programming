@@ -10,7 +10,7 @@ void puts2(char *str)
 {
 	int i = 0;
 
-	do
+	while (str[i] != '\\')
 	{
 		while (*(str + i))
 		{
@@ -19,5 +19,4 @@ void puts2(char *str)
 		}
 		_putchar('\n');
 	}
-	while (str[i] != '\\');
 }
