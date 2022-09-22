@@ -1,1 +1,1 @@
-Advanced tasks on pointers, arrays and strings.
+pointers - for pointing memory allocation.
