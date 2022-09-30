@@ -1,3 +1,3 @@
 # static libraries
 This project explores creation and usage of static libraries. \
-`create.sh` creates a static library called `libmy.a` from all `.c` files in the current directory.
+The `create_static_lib.sh` script creates a static library called `liball.a` from all `.c` files in the current directory.
