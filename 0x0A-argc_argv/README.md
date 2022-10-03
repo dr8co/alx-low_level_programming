@@ -9,7 +9,7 @@ The second parameter, `argv` (_argument vector_), is an __array of pointers__ to
 
 The first element of the array, `argv[0]`, is a pointer to the character array that contains the __program name__ or __invocation name__ of the program that is being run from the command line.\
 `argv[1]` indicates the __first argument__ passed to the program, `argv[2]` the __second argument__, and so on.\
-The general syntax is:
+The general prototype is:
 ```C
 int main(int argc, char *argv[])
 {
