@@ -4,6 +4,7 @@
 /**
  * free_grid - frees the 2 dimensional grid previously
  * created by alloc_grid function
+ * 
  * @grid: the grid to free
  * @height: height of the grid
  * Return: no return (void)
