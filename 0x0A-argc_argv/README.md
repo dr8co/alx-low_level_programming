@@ -4,11 +4,11 @@ Command line arguments are values passed to programs from the command line when 
 In C programming, these values are handled by the `main()` function using `argc` and `argv` parameters.
 
 The first parameter, `argc` (_argument count_) is an integer that indicates how many command-line arguments were passed by the user (including the name of the program) when the program was called or run.\
-The second parameter, `argv` (_argument vector_), is an __array of pointers__ to __arrays of character objects__. (A vector is a one-dimensional array).
+The second parameter, `argv` (_argument vector_), is an **array of pointers** to **arrays of character objects**. (A vector is a one-dimensional array).
 
-The first element of the array, `argv[0]`, is a pointer to the character array that contains the __program name__ or __invocation name__ of the program that is being run from the command line.\
-`argv[1]` indicates the __first argument__ passed to the program, `argv[2]` the __second argument__, and so on.\
-The general prototype is:
+The first element of the array, `argv[0]`, is a pointer to the character array that contains the **program name** or **invocation name** of the program that is being run from the command line.\
+`argv[1]` indicates the **first argument** passed to the program, `argv[2]` the **second argument**, and so on.\
+Syntax:
 
 ```C
 int main(int argc, char *argv[])

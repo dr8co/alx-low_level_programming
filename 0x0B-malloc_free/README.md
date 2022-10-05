@@ -8,7 +8,7 @@ When variables are declared or when strings within double quotes are used, the p
 
 The concept of dynamic memory allocation in C language enables the programmer to allocate memory at runtime.
 
-### `malloc()` function
+### `malloc()`
 
 The `malloc()` ("memory allocation") function is used to allocate a certain amount of memory during the execution of a program. It will request a block of memory from the heap.
 
@@ -30,7 +30,7 @@ If space is insufficient, allocation fails and the function returns a `NULL` poi
 
 The memory that is allocated with `malloc()` is not automatically released when the function returns, hence the need to de-allocate the allocated memory.
 
-### `free()` function
+### `free()`
 
 When the amount of memory is not needed anymore, it must be returned to the operating system by calling the function `free()`. This function de-allocates the memory dynamically allocated using `malloc()`.
 
