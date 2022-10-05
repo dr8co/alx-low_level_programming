@@ -5,7 +5,7 @@
 * [About](#about)
 * [Requirements](#requirements)
 * [Projects](#projects)
-* [Acknowledgements](#acknowledgements)
+* [Acknowledgement](#acknowledgement)
 
 _______________________
 
@@ -59,7 +59,7 @@ The projects are:
 
 _______________________
 
-## Acknowledgements
+## Acknowledgement
 
 Author: [Ian Duncan](https://github.com/dr8co "Ian's Github profile")
 
