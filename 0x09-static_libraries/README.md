@@ -3,25 +3,31 @@
 ## Table of Content
 
 * [Introduction](#introduction)
+* [Static Libraries vs Dynamic Libraries](#static-libraries-vs-dynamic-libraries-an-overview)
 * [Creating a C static library](#creating-a-c-static-library)
 * [Using a C static library](#using-a-c-static-library)
 * [Acknowledgements](#acknowledgement)
 
+__________________________
+
 ## Introduction
 
 A library is a file containing several object files, that can be used as a single entity in a linking phase of a program. Normally, the library is indexed, so it is easy to find symbols (functions, variables, methods, etc.) in them.\
-For this reason, linking a program whose object files are ordered in libraries is faster than linking a program whose object files are separate on the disk. Also, when using a library, we have fewer files to look for and open, which even further speeds up linking.
-
+For this reason, linking a program whose object files are ordered in libraries is faster than linking a program whose object files are separate on the disk. Also, when using a library, we have fewer files to look for and open, which even further speeds up linking.\
 There are two types of libraries:
 
 * Static libraries
 * Dynamic (or shared) libraries
 
- [**Static libraries**](https://en.wikipedia.org/wiki/Static_library "Static library") are collections of **object files** that are linked into the program during the linking phase of compilation, and are not relevant during runtime.\
+__________________________
+
+## Static Libraries vs Dynamic Libraries: An Overview
+
+ [**Static libraries**](https://en.wikipedia.org/wiki/Static_library "Static library") are collections of **object files** that are linked into the program during the linking phase of compilation, and are not relevant during runtime.
  Object files are also used only during the linking phase, and are not required during runtime - only the program's executable file is needed in order to run the program.
 
 [**Dynamic libraries**](https://en.wikipedia.org/wiki/Shared_library "Shared library") are linked into the program in **two stages**. First, during **compile time**, the linker verifies that all the symbols required by the program, are either linked into the program, or in one of its shared libraries.\
-However, the object files from the dynamic library are not inserted into the executable file. Instead, when the program is started, a program in the system (called a dynamic loader) checks out which shared libraries were linked with the program, loads them to memory, and attaches them to the copy of the program in memory.
+However, the object files from the dynamic library are **not inserted into the executable file**. Instead, when the program is started, a program in the system (called a dynamic loader) checks out which shared libraries were linked with the program, loads them to memory, and attaches them to the **copy** of the program in memory.
 __________________________
 
 ## Creating a C static library
@@ -126,10 +132,12 @@ ian@github:~$ ./demo
 fun() called from a static library
 ```
 
+__________________________
+
 ## Acknowledgement
 
 * [Nicholas Ribiero](https://www.linkedin.com/pulse/c-static-library-nicolas-ribeiro "C Static Library via LinkedIn")
-* [Guy Keren](https://docencia.ac.upc.edu/FIB/USO/Bibliografia/unix-c-libraries.html)
-* [GeeksforGeeks](https://www.geeksforgeeks.org/static-vs-dynamic-libraries/)
+* [Guy Keren](https://docencia.ac.upc.edu/FIB/USO/Bibliografia/unix-c-libraries.html "Visit document")
+* [GeeksforGeeks](https://www.geeksforgeeks.org/static-vs-dynamic-libraries/ "Visit GeeksforGeeks")
 
 __________________________
