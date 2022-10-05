@@ -123,7 +123,7 @@ ian@github:~$ gcc demo.c -L. -lmy_lib -o demo
 ```
 
 The `-L.` option tells `gcc` to look for the library files in the working directory (the dot after -L).
-The `-l` option tells it to link the specified file with the library file.
+The `-l` option tells it to link the specified file with the library.
 
 ### 4. Run the demo program
 
