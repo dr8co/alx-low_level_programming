@@ -3,11 +3,10 @@
 #include <stdlib.h>
 
 /**
- * *malloc_checked - allocate memory 
- * 
+ * malloc_checked - allocate memory
  * @b: the size of the memory to be allocated
- * Return: a pointer to the allocated memory (SUCCESS)
- * Or normal termination error (FAIL)
+ * 
+ * Return: a pointer to the allocated memory (SUCCESS) or normal termination error (FAIL)
  */
 void *malloc_checked(unsigned int b)
 {
