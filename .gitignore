@@ -8,7 +8,7 @@
 *.exe
 *.out
 *.app
-
-# File patterns
 ?
+
+# Other files
 [0-9]-main.c
