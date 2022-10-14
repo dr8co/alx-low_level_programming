@@ -1,1 +1,1 @@
-pointers - for pointing memory allocation.
+# 0x05. C - pointers, arrays, strings

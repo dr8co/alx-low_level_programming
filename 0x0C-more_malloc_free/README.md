@@ -1,4 +1,4 @@
-# More `malloc`, `free`
+# 0x0C. C - More `malloc`, `free`
 
 Exercises to learn more about dynamic memory allocation in C.
 

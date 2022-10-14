@@ -1,4 +1,4 @@
-# Command Line Arguments (argc and argv)
+# 0x0A. C - Command Line Arguments (argc and argv)
 
 Command line arguments are values passed to programs from the command line when they are executed.\
 In C programming, these values are handled by the `main()` function using `argc` and `argv` parameters.

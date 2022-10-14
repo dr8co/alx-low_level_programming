@@ -1,1 +1,1 @@
-Exploring nested loops and funcions in C
+# 0x02. C - Functions and Nested Loops
