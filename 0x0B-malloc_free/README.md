@@ -30,6 +30,23 @@ If space is insufficient, allocation fails and the function returns a `NULL` poi
 
 The memory that is allocated with `malloc()` is not automatically released when the function returns, hence the need to de-allocate the allocated memory.
 
+### `calloc()`
+
+`calloc` or “contiguous allocation” method in C is used to dynamically allocate the specified number of blocks of memory of the specified type.
+It is very much similar to `malloc()` but has two different points and these are:
+
+- It initializes each block with a default value ‘0’.
+- It has two parameters or arguments as compare to `malloc()`.
+
+Syntax:
+
+```C
+ptr = (cast-type*)calloc(n, element-size);
+```
+
+Where `n` is the number of elements and `element-size` is the size of each element.
+If the space is insufficient, allocation fails and a NULL pointer is returned.
+
 ### `free()`
 
 When the amount of memory is not needed anymore, it must be returned to the operating system by calling the function `free()`. This function de-allocates the memory dynamically allocated using `malloc()`.
