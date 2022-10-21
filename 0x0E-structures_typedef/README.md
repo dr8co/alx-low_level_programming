@@ -2,4 +2,4 @@
 
 ## About
 
-An project on C structures (`structs`) and `typedef`.
+A project on C structures (`structs`) and `typedef`.

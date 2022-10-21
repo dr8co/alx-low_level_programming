@@ -27,6 +27,7 @@ The concepts covered in these projects include but not limited to:
 * Static libraries
 * Command-line arguments
 * Recursion
+* Variadic functions
 
 _______________________
 
@@ -59,6 +60,8 @@ The projects are:
 * [0x0C. C - more malloc, free](./0x0C-more_malloc_free/)
 * [0x0D. C - preprocessor](./0x0D-preprocessor/)
 * [0x0E. C - structures, typedef](./0x0E-structures_typedef/)
+* [0x0F. C - Function pointers](./0x0F-function_pointers/)
+* [0x10. C - Variadic functions](./0x10-variadic_functions/)
 
 _______________________
 
