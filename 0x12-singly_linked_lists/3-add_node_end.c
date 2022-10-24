@@ -3,6 +3,22 @@
 #include "lists.h"
 
 /**
+ * _strlen - find the length of a string
+ * 
+ * @str: the string whose length is to be found 
+ * Return: the length of the string
+ */
+unsigned int _strlen(char *str)
+{
+	unsigned int i = 0;
+
+	while (*(str + i) != '\0')
+		i++;
+
+	return (i);
+}
+
+/**
  * add_node_end - adds a new node to the end of linked list
  * @head: double pointer to a linked list
  * @str: string to add to the new node
