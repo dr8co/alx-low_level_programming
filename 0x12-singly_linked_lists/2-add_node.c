@@ -10,10 +10,11 @@
  */
 unsigned int _strlen(char *str)
 {
-	unsigned int i;
+	unsigned int i = 0;
 
-	for (i = 0; str[i]; i++)
-		;
+	while (*(str + i) != '\0')
+		i++;
+
 	return (i);
 }
 
