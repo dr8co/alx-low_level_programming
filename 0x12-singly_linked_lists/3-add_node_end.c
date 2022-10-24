@@ -4,8 +4,8 @@
 
 /**
  * _strlen - find the length of a string
- * 
- * @str: the string whose length is to be found 
+ *
+ * @str: the string whose length is to be found
  * Return: the length of the string
  */
 unsigned int _strlen(char *str)
