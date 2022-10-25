@@ -69,12 +69,12 @@ int main()
  /* Three blocks have been allocated dynamically.
  We have pointers to these three blocks as head,
  second and third
- head   second   third
-  |    |    |
-  |    |    |
- +---+-----+  +----+----+  +----+----+
- | # | # |  | # | # |  | # | # |
- +---+-----+  +----+----+  +----+----+
+     head        second       third
+      |            |            |
+      |            |            |
+ +----+----+  +----+----+  +----+----+
+ | #  | #  |  | #  | #  |  | #  | #  |
+ +----+----+  +----+----+  +----+----+
 
 # represents any random value.
 Data is random because we haven’t assigned
@@ -88,12 +88,12 @@ anything yet */
  pointer of first block points to second.
  So they both are linked.
 
- head   second   third
-  |    |    |
-  |    |    |
- +---+---+  +----+----+  +-----+----+
- | 1 | o----->| # | # |  | # | # |
- +---+---+  +----+----+  +-----+----+
+     head          second       third
+      |              |            |
+      |              |            |
+ +----+----+    +----+----+  +----+----+
+ | 1  | o------>| #  | #  |  | #  | #  |
+ +----+----+    +----+----+  +----+----+
 */
 
  /* assign data to second node */
@@ -107,12 +107,12 @@ anything yet */
  pointer of the second block points to the third
  block. So all three blocks are linked.
 
- head   second   third
-  |    |    |
-  |    |    |
- +---+---+  +---+---+  +----+----+
- | 1 | o----->| 2 | o-----> | # | # |
- +---+---+  +---+---+  +----+----+  */
+     head         second        third
+      |             |             |
+      |             |             |
+ +----+----+   +----+----+   +----+----+
+ | 1  | o----->| 2  | o----->| #  | #  |
+ +----+----+   +----+----+   +----+----+  */
 
  third->data = 3; /* assign data to third node */
  third->next = NULL;
@@ -124,12 +124,12 @@ anything yet */
 
  We have the linked list ready.
 
-  head
-   |
-   |
-  +---+---+  +---+---+  +----+------+
-  | 1 | o----->| 2 | o-----> | 3 | NULL |
-  +---+---+  +---+---+  +----+------+
+      head
+       |
+       |
+  +----+----+    +----+----+  +----+-----+
+  | 1  | o------>| 2  | o---->| 3  | NULL|
+  +----+----+    +----+----+  +----+-----+
 
 
  Note that only head is sufficient to represent
