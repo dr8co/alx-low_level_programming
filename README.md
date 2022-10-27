@@ -64,6 +64,7 @@ The projects are:
 * [0x10. C - Variadic functions](./0x10-variadic_functions/)
 * [0x11. C - printf](./0x11-printf/)
 * [0x12. C - singly-linked lists](./0x12-singly_linked_lists/)
+* [0x13. C - More singly linked lists](./0x13-more_singly_linked_lists/)
 
 _______________________
 
