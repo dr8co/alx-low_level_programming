@@ -14,8 +14,8 @@ size_t _strlen(char *str)
 {
 	size_t i;
 
-	while (str[i])
-		++i;
+	while (str[i] != '\0')
+		i++;
 	return (i);
 }
 
