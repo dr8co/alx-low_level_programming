@@ -4,12 +4,12 @@
 
 * [Introduction](#introduction)
 * [Bitwise Operators](#bitwise-operators)
-  * [Bitwise NOT](#bitwise-not)
-  * [Bitwise OR](#bitwise-or)
-  * [Bitwise AND](#bitwise-and)
-  * [Bitwise  XOR](#bitwise-xor)
-  * [Bitwise Left shift](#bitwise-left-shift)
-  * [Bitwise Right shift](#bitwise-right-shift)
+  * [Bitwise NOT](#bitwise-not-)
+  * [Bitwise OR](#bitwise-or-)
+  * [Bitwise AND](#bitwise-and-)
+  * [Bitwise  XOR](#bitwise-xor-)
+  * [Bitwise Left shift](#bitwise-left-shift-)
+  * [Bitwise Right shift](#bitwise-right-shift-)
 * [Summary](#summary)
 
 ## Introduction
@@ -133,5 +133,3 @@ Note that in the third case we shifted a bit off the right end of the number, so
 |    0    |    1    |    0    |    1    |    1    |    1    |    0    |
 |    1    |    0    |    0    |    1    |    1    |    0    |    1    |
 |    1    |    1    |    1    |    1    |    0    |    0    |    0    |
-
-[def]: #bitwise-not
