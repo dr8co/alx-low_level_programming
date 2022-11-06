@@ -28,6 +28,10 @@ The concepts covered in these projects include but not limited to:
 * Command-line arguments
 * Recursion
 * Variadic functions
+* Singly linked lists
+* Bit manipulation
+* File input/output
+* System calls
 
 _______________________
 
@@ -42,7 +46,8 @@ _______________________
 ## Projects
 
 These projects are written mainly in C.
-More about individual projects can be found in their respective READMEs.\
+More about individual projects can be found in their respective READMEs.
+
 The projects are:
 
 * [0x00. C - Hello, World](./0x00-hello_world/)
@@ -65,16 +70,17 @@ The projects are:
 * [0x11. C - printf](./0x11-printf/)
 * [0x12. C - singly-linked lists](./0x12-singly_linked_lists/)
 * [0x13. C - More singly linked lists](./0x13-more_singly_linked_lists/)
+* [0x14. C - Bit manipulation](./0x14-bit_manipulation/)
+* [0x15. C - File input/output](./0x15-file_io/)
 
 _______________________
 
 ## Acknowledgement
 
-Author: [Ian Duncan](https://github.com/dr8co "Ian's Github profile")
+Author: [Ian Duncan](https://github.com/dr8co "Ian's Github profile").
 
 All work contained in this repository was completed as part of the curriculum for the
 12-month [ALX Software Engineering Programme](https://www.alxafrica.com/ "learn more"),
 offered in collaboration with [Holberton School](https://www.holbertonschool.com/ "Holberton School").
 The programme prepares the students with the technical and work-ready skills
-for a global career as a full-Stack Developer.\
-You can learn more [here](https://www.alxafrica.com/ "ALX homepage").
+for a global career as a full-Stack Developer.
