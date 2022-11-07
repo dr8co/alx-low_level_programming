@@ -33,14 +33,14 @@ Some of the common bit operators are:
 
 ### Bitwise NOT (~)
 
-Bitwise NOT is an unary operator that flips the bits of the number i.e.,
+Bitwise NOT is an unary operator that **flips the bits** of a number i.e.,
 if the ith bit is 0, it will change it to 1 and vice versa.
 Bitwise NOT is simply the one's compliment of a number.
 
 ~A is 0011101, which is decimal 29.\
 ~B is 01000, which is decimal 8.
 
-The result of a bitwise NOT is dependent on the size of the data type.
+The result of a bitwise NOT is **dependent on the size** of the data type.
 
 For example,
 
