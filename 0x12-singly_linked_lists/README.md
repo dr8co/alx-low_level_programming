@@ -144,7 +144,7 @@ anything yet */
 Time Complexity for a Linked List:
 
 | Time complexity | Worst Case | Average Case |
-|-----------------|------------|--------------|
+|:---------------:|:----------:|:------------:|
 |      Search     |     O(n)   |    O(n)      |
 |     Insertion   |     O(1)   |    O(1)      |
 |     Deletion    |     O(1)   |    O(1)      |
