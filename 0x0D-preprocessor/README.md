@@ -1,5 +1,17 @@
 # 0x0D. C - Preprocessors
 
+## Table of Content
+
+* [Overview](#overview)
+* [Types of Preprocessor Directives](#types-of-preprocessor-directives)
+  * [Macros](#1-macros)
+  * [File Inclusion](#2-file-inclusion)
+    * [Header Files](#header-files-or-standard-files)
+    * [User-defined Files](#user-defined-files)
+  * [Conditional Compilation](#3-conditional-compilation)
+  * [Other Directives](#4-other-directives)
+* [Acknowledgement](#acknowledgement)
+
 ## Overview
 
  Preprocessors process the source code before compilation.
@@ -11,13 +23,13 @@
 
 Preprocessor programs provide preprocessor directives that tell the compiler to preprocess the source code before compiling.
 
-All of these preprocessor directives begin with a `‘#’` (hash) symbol.
-The ‘#’ symbol indicates that whatever statement starts with a ‘#’ will go to the preprocessor program to get executed.
+All of these preprocessor directives begin with a `#` (hash) symbol.
+The `#` symbol indicates that whatever statement starts with a `#` will go to the preprocessor program to get executed.
 Some examples of preprocessor directives are: `#include`, `#define`, `#ifndef`, etc.
 
-The # symbol only provides a path to the preprocessor, and a command such as include
+The `#` symbol only **provides a path to the preprocessor**, and a command such as include
 is processed by the preprocessor program.
-For example, #include will include extra code in your program.
+For example, `#include` will include extra code in your program.
 
 Preprocessor directives can be placed anywhere in a program.
 
@@ -26,7 +38,7 @@ Preprocessor directives can be placed anywhere in a program.
 1. Macros
 2. File Inclusion
 3. Conditional Compilation
-4. Other directives
+4. Other Directives
 
 ### 1. Macros
 
@@ -112,7 +124,7 @@ There are two types of files that can be included by the user in the program:
 * Header files or Standard files
 * User-defined files
 
-#### Header files or Standard files
+#### Header Files or Standard Files
 
 These files contain definitions of pre-defined functions like `printf()`, and `scanf()`.
 These files **must be included** to work with these functions.
@@ -130,7 +142,7 @@ whereas functions that perform string operations are in the `string` file.
 where `file_name` is the name of the file to be included.
 The `<` and `>` brackets tell the compiler to look for the file in the standard directory.
 
-#### User-defined files
+#### User-defined Files
 
 When a program becomes very large, it is a good practice to divide it
 into smaller files and include them whenever needed.
@@ -280,3 +292,11 @@ that is supposed to return a value does not return a value.
 does not use the parameters passed to it.
 * `#pragma warn -rch`: This directive hides those warnings which are raised when a code is unreachable.
 For example, any code written after the return statement in a function is unreachable.
+
+## Acknowledgement
+
+README article written with help from
+[GeeksForGeeks](https://www.geeksforgeeks.org/cc-preprocessors/ "GeeksForGeeks").
+
+Repository author:
+[Ian Duncan](https://github.com/dr8co "Ian's Github profile").
