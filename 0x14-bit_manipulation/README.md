@@ -71,7 +71,8 @@ A | B evaluates to:
 
 ### Bitwise AND (&)
 
-Bitwise AND is a binary operator that operates on two equal-length bit patterns, similar to bitwise OR.
+Bitwise AND is a binary operator that operates on two equal-length bit patterns,
+similar to bitwise OR.
 If both bits in the compared position of the bit patterns are 1,
 the bit in the resulting bit pattern is 1, otherwise 0.
 
@@ -102,7 +103,8 @@ A ^ B evaluates to:
 ### Bitwise Left Shift (<<)
 
 The bitwise left shift operator shifts bits to the left.
-The left operand is the expression to shift the bits of, and the right operand is an integer number of bits to shift left by.
+The left operand is the expression to shift the bits of, and the right operand
+is an integer number of bits to shift left by.
 
 So when we say `x << 1`, we are saying “shift the bits in the variable x left by 1 place”.
 New bits shifted in from the right side receive the value 0.
