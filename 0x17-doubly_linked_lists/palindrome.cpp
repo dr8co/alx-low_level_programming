@@ -18,7 +18,7 @@ bool isPalindrome(int num) {
 int main() {
     std::vector<int> arr{0};
 
-    for (int i = 999; i >= 99; --i) {
+    for (int i = 99; i <= 999; ++i) {
         for (int j = i; j >= 99; --j) {
 
             if (isPalindrome(i * j))
