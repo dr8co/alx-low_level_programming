@@ -1,5 +1,16 @@
 # 0x17. C - Doubly Linked Lists
 
+## Table of Content
+
+* [Introduction](#introduction)
+* [Syntax](#syntax)
+* [Working principle](#working-of-a-doubly-linked-list)
+* [Advantages over singly linked lists](#advantages-of-dll-over-the-singly-linked-list)
+* [Disadvantages with respect to singly linked lists](#disadvantages-of-dll-over-the-singly-linked-list)
+* [Applications](#applications-of-dll)
+* [Real-Time Applications](#real-time-applications-of-dll)
+* [Acknowledgement](#acknowledgement)
+
 ## Introduction
 
 A doubly linked list is a type of linked list in which nodes
@@ -14,6 +25,8 @@ The benefit of this doubly linked list is that now we can navigate in both direc
 
 Also, we can delete a node without containing the previous node’s address
 as every node has a left pointer that points to its previous node.
+
+## Syntax
 
 In C, the node of a doubly-linked list is represented as:
 
