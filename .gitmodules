@@ -4,3 +4,6 @@
 [submodule "0x16-simple_shell"]
 	path = 0x16-simple_shell
 	url = https://github.com/dr8co/simple_shell
+[submodule "0x19-stacks_queues"]
+	path = 0x19-stacks_queues
+	url = https://github.com/dr8co/monty
