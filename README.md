@@ -32,12 +32,14 @@ The concepts covered in these projects include but not limited to:
 * Bit manipulation
 * File input/output
 * System calls
+* Dynamic libraries
+* Stacks and queues
 
 _______________________
 
 ## Requirements
 
-* Linux environment (**Ubuntu 20.04 LTS** was used for all the projects in this repo).
+* A Linux environment (**Ubuntu 20.04 LTS** was used for all the projects in this repo).
 
 * All code is compiled using GNU C compiler, `gcc`, with flags `-Wall -Werror -Wextra -pedantic -std=gnu89`
 
@@ -72,6 +74,10 @@ The projects are:
 * [0x13. C - More singly linked lists](./0x13-more_singly_linked_lists/)
 * [0x14. C - Bit manipulation](./0x14-bit_manipulation/)
 * [0x15. C - File input/output](./0x15-file_io/)
+* [0x16. C - Simple shell](./0x16-simple_shell/)
+* [0x17. C - Doubly linked lists](./0x17-doubly_linked_lists/)
+* [0x18. C - Dynamic Libraries](./0x18-dynamic_libraries/)
+* [0x19. C - Stacks and Queues](./0x19-stacks_queues/)
 
 _______________________
 
