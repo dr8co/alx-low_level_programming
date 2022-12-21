@@ -72,8 +72,12 @@ In DLL, we can get the previous node using the previous pointer.
 
 ## Disadvantages of DLL over the singly linked list
 
-* Every node of DLL Requires extra space for a previous pointer. (It is possible to implement DLL with a single pointer though).
-* All operations require an extra pointer previous to be maintained. For example, in insertion, we need to modify previous pointers together with the next pointers. For example in the following functions for insertions at different positions, we need 1 or 2 extra steps to set the previous pointer.
+* Every node of DLL Requires extra space for a previous pointer.
+(It is possible to implement DLL with a single pointer though).
+* All operations require an extra pointer previous to be maintained.
+For example, in insertion, we need to modify previous pointers together with the next pointers.
+For example in the following functions for insertions at different positions,
+we need 1 or 2 extra steps to set the previous pointer.
 
 ## Applications of DLL
 
