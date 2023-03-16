@@ -34,6 +34,9 @@ The concepts covered in these projects include but not limited to:
 * System calls
 * Dynamic libraries
 * Stacks and queues
+* Hash tables
+* Binary trees
+* Makefiles
 
 _______________________
 
