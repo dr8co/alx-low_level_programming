@@ -82,6 +82,7 @@ The projects are:
 * [0x18. C - Dynamic Libraries](./0x18-dynamic_libraries/)
 * [0x19. C - Stacks and Queues](./0x19-stacks_queues/)
 * [0x1A. C - Hash tables](./0x1A-hash_tables/)
+* [0x1B. C - Binary trees](./0x1B-binary_trees)
 * [0x1C. C - Makefiles](./0x1C-makefiles/)
 
 _______________________
