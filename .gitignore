@@ -10,8 +10,8 @@
 *.app
 ?
 
-# Other files
-[0-9]-main.c
+# Main files
+*main.c
 
 # Other config directories
 .*/**
