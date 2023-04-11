@@ -15,3 +15,7 @@
 
 # Other config directories
 .*/**
+
+# CMake build directories and config files
+cmake-*
+CMakeLists.txt
