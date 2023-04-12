@@ -43,11 +43,11 @@ int binary_search(int *array, size_t size, int value)
 
 		while (low < high)
 		{
-			mid = (low + high) / 2;
+			mid = low + (high - low) / 2;
 			if (array[mid] < value)
 				low = mid + 1;
 			else if (array[mid] > value)
-				high = mid;
+				high = mid - 1;
 			else
 				return (mid);
 			print_array(array + low, high + 1 - low);
