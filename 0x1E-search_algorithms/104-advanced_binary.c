@@ -7,16 +7,18 @@
  *
  * return: void
  */
-void print_array(int *array, size_t size) {
-    size_t i;
+void print_array(int *array, size_t size)
+{
+	size_t i;
 
-    printf("Searching in array:");
-    for (i = 0; i < size; i++) {
-        printf(" %d", array[i]);
-        if (i != size - 1)
-            printf(",");
-    }
-    printf("\n");
+	printf("Searching in array:");
+	for (i = 0; i < size; i++)
+	{
+		printf(" %d", array[i]);
+		if (i != size - 1)
+			printf(",");
+	}
+	printf("\n");
 }
 
 /**
@@ -28,24 +30,27 @@ void print_array(int *array, size_t size) {
  *
  * Return: index where first occurrence of value is located, or -1 on failure
  */
-int advanced_binary(int *array, size_t size, int value) {
-    int val, r = -1;
-    size_t mid;
+int advanced_binary(int *array, size_t size, int value)
+{
+	int val, r = -1;
+	size_t mid;
 
-    if (array != NULL && size > 0) {
-        print_array(array, size);
-        mid = (size - 1) / 2;
-        val = array[mid];
-        if (val < value) {
-            r = advanced_binary(array + mid + 1, size - (mid + 1), value);
-            if (r >= 0)
-                r += mid + 1;
-        } else if (val > value)
-            r = advanced_binary(array, mid + 1, value);
-        else if (mid == 0 || array[mid - 1] < val)
-            r = mid;
-        else
-            r = advanced_binary(array, mid + 1, value);
-    }
-    return (r);
+	if (array != NULL && size > 0)
+	{
+		print_array(array, size);
+		mid = (size - 1) / 2;
+		val = array[mid];
+		if (val < value)
+		{
+			r = advanced_binary(array + mid + 1, size - (mid + 1), value);
+			if (r >= 0)
+				r += mid + 1;
+		} else if (val > value)
+			r = advanced_binary(array, mid + 1, value);
+		else if (mid == 0 || array[mid - 1] < val)
+			r = mid;
+		else
+			r = advanced_binary(array, mid + 1, value);
+	}
+	return (r);
 }

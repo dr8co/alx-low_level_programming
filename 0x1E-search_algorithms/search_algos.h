@@ -13,10 +13,11 @@
  *
  * Description: singly linked list node structure
  */
-typedef struct listint_s {
-    int n;
-    size_t index;
-    struct listint_s *next;
+typedef struct listint_s
+{
+	int n;
+	size_t index;
+	struct listint_s *next;
 } listint_t;
 
 /**
@@ -30,11 +31,12 @@ typedef struct listint_s {
  * Description: singly linked list node structure with an express lane
  * for Holberton project
  */
-typedef struct skiplist_s {
-    int n;
-    size_t index;
-    struct skiplist_s *next;
-    struct skiplist_s *express;
+typedef struct skiplist_s
+{
+	int n;
+	size_t index;
+	struct skiplist_s *next;
+	struct skiplist_s *express;
 } skiplist_t;
 
 int linear_search(int *array, size_t size, int value);
