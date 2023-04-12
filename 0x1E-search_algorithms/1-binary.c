@@ -1,4 +1,5 @@
 #include "search_algos.h"
+#include <bits/types/cookie_io_functions_t.h>
 
 /**
  * print_array - prints an array of integers
@@ -40,6 +41,9 @@ int binary_search(int *array, size_t size, int value)
 		high = size - 1;
 
 		print_array(array + low, high + 1 - low);
+
+		if (high == 0)
+			return (array[0] == value ? 0 : -1);
 
 		while (low < high)
 		{
