@@ -1,61 +1,71 @@
 #include "search_algos.h"
-#include <bits/types/cookie_io_functions_t.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
 
 /**
- * print_array - prints an array of integers
+ * array_print - prints an array
  * @array: array to print
- * @size: size of array
- *
- * return: void
+ * @lo: index of the low bound
+ * @hi: index of the high bound
  */
-void print_array(int *array, size_t size)
+void array_print(int *array, size_t lo, size_t hi)
 {
 	size_t i;
 
-	printf("Searching in array:");
-	for (i = 0; i < size; i++)
+	printf("Searching in array: ");
+	for (i = lo; i <= hi; i++)
 	{
-		printf(" %d", array[i]);
-		if (i != size - 1)
-			printf(",");
+		printf("%d", array[i]);
+		if (i < hi)
+			printf(", ");
 	}
 	printf("\n");
 }
 
 /**
- * binary_search - searches for a value in a sorted array of integers using the
- * Binary search algorithm
- * @array: pointer to the first element of the array to search in
- * @size: number of elements in array
- * @value: the value to search for
+ * help_binary - searches for a value in an array of
+ * integers using recursion
+ * @array: array to search the value in
+ * @value: value to look for
+ * @lo: index of the low bound
+ * @hi: index of the high bound
  *
- * Return: index where value is located, or -1 on failure
+ * Return: the index of the found value,
+ * or -1 if not found
+ */
+int help_binary(int *array, int value, size_t lo, size_t hi)
+{
+	size_t mid;
+
+	array_print(array, lo, hi);
+	if (hi == lo && array[lo] != value)
+		return (-1);
+
+	mid = ((hi - lo) / 2) + lo;
+	if (array[mid] == value)
+		return (mid);
+	if (array[mid] < value)
+		return (help_binary(array, value, mid + 1, hi));
+	if (array[mid] > value)
+		return (help_binary(array, value, lo, mid - 1));
+	return (-1);
+}
+
+/**
+ * binary_search - searches for a value in an array of
+ * integers using the Binary search algorithm
+ * @array: array to search the value in
+ * @size: size of the array
+ * @value: value to look for
+ *
+ * Return: the index of the found value,
+ * or -1 if not found
  */
 int binary_search(int *array, size_t size, int value)
 {
-	size_t low, mid, high;
+	if (!array || size == 0)
+		return (-1);
 
-	if (array != NULL && size > 0)
-	{
-		low = 0;
-		high = size - 1;
-
-		print_array(array + low, high + 1 - low);
-
-		if (high == 0)
-			return (array[0] == value ? 0 : -1);
-
-		while (low < high)
-		{
-			mid = low + (high - low) / 2;
-			if (array[mid] < value)
-				low = mid + 1;
-			else if (array[mid] > value)
-				high = mid - 1;
-			else
-				return (mid);
-			print_array(array + low, high + 1 - low);
-		}
-	}
-	return (-1);
+	return (help_binary(array, value, 0, size - 1));
 }
