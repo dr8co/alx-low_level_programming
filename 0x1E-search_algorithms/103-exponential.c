@@ -84,12 +84,12 @@ int exponential_search(int *array, size_t size, int value)
 	{
 		while (bound < size && array[bound] < value)
 		{
-			printf("Value checked array[%zu] = [%d]\n", bound, array[bound]);
+			printf("Value checked array[%lu] = [%d]\n", bound, array[bound]);
 			bound *= 2;
 		}
 		low = bound / 2;
 		bound = minimum_value(size - 1, bound);
-		printf("Value found between indexes [%zu] and [%zu]\n", low, bound);
+		printf("Value found between indexes [%lu] and [%lu]\n", low, bound);
 		r = binary_search(array + low, bound + 1 - low, value);
 		if (r >= 0)
 			return (r + low);

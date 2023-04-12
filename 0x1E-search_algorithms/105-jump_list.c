@@ -35,22 +35,22 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 		jump = sqrt(size);
 		left = list;
 		right = move_forward(left, jump);
-		printf("Value checked at index [%zu] = [%d]\n", right->index, right->n);
+		printf("Value checked at index [%lu] = [%d]\n", right->index, right->n);
 		while (right->index < (size - 1) && right->n < value)
 		{
 			left = right;
 			right = move_forward(left, right->index + jump);
-			printf("Value checked at index [%zu] = [%d]\n", right->index, right->n);
+			printf("Value checked at index [%lu] = [%d]\n", right->index, right->n);
 		}
-		printf("Value found between indexes [%zu] and [%zu]\n",
+		printf("Value found between indexes [%lu] and [%lu]\n",
 			   left->index, right->index);
-		printf("Value checked at index [%zu] = [%d]\n", left->index, left->n);
+		printf("Value checked at index [%lu] = [%d]\n", left->index, left->n);
 		while (left->index < size - 1 && left->n < value)
 		{
 			left = left->next;
 			if (left == NULL)
 				return (NULL);
-			printf("Value checked at index [%zu] = [%d]\n", left->index, left->n);
+			printf("Value checked at index [%lu] = [%d]\n", left->index, left->n);
 		}
 		if (left->n == value)
 			return (left);
